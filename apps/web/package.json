@@ -10,6 +10,14 @@
   "nx": {
     "tags": [
       "scope:web"
-    ]
+    ],
+    "targets": {
+      "build": {
+        "dependsOn": [
+          "^build",
+          "^typecheck"
+        ]
+      }
+    }
   }
 }
